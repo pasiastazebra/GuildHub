@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
-const path = require("path");
+import path from "path";
 
 export default {
   sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+    includePaths: [path.join(new URL("./styles", import.meta.url).pathname)],
   },
 };
