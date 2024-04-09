@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "@/styles/global.scss";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +13,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <nav className="navbar">
+          <a href="/" className="navbar-element logo">
+            GuildHub
+          </a>
+          <a href="/features" className="navbar-element">
+            Features
+          </a>
+          <a href="/faq" className="navbar-element">
+            FAQ
+          </a>
+          <a href="/pricing" className="navbar-element">
+            Pricing
+          </a>
+          <a href="/login" className="navbar-element"></a>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
