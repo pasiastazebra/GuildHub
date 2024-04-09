@@ -4,13 +4,18 @@
     max-width: fit-content;
     max-height: fit-content;
     &-element {
-        border: 1px solid black;
+        margin: 0px 2px;
+        border: 6px solid #64b5f6;
+        border-radius: 10px;
 
-        margin: 2px;
+        background-color: #bbdefb;
 
         &-title {
-            font-size: 20px;
+            font-size: 25px;
             text-align: center;
+            font-weight: 600;
+
+            color: #343a40;
         }
 
         &-image {
