@@ -1,4 +1,3 @@
-import React from "react";
 import "@/styles/carousel.scss";
 interface CarouselProps {
   objectsArray: { title: string; image: string }[];

@@ -1,0 +1,39 @@
+@import '_variables';
+
+.navbar {
+    display: block;
+
+    background: $greenblur;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+
+    &-wrapper {
+        display: flex;
+    justify-content: space-between;
+    }
+
+    &-links {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 15px;
+    }
+
+    &-link {
+        margin: 10px;
+    }
+
+    &-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-icon {
+        max-width: 35px;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
