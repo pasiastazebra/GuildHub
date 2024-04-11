@@ -41,8 +41,11 @@
 
             &::after{
                 position: relative;
+                
                 width: 10px;
                 height: 10px;
+                top: 15px;
+
                 background: linear-gradient(to right, $green130, $green90);
                 border-radius: 50%;
                 content: '';
@@ -52,6 +55,8 @@
             }
             &:hover{
                 &::after {
+                    top: 0px;
+
                     opacity: 1;
                     transition: 0.2s;
                 }
