@@ -3,9 +3,10 @@
 .navbar {
     display: block;
 
-    background: $greenblur;
+    background: rgba($green50, 0.9);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 
     &-wrapper {
         display: flex;
@@ -25,10 +26,12 @@
     &-logo {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     &-icon {
         max-width: 35px;
+        margin: 10px;
     }
 }
 

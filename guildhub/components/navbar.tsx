@@ -5,6 +5,7 @@ import "@/styles/navbar.scss";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+
   const handeScroll = () => {
     const offset = window.scrollY;
 
@@ -14,13 +15,17 @@ const Navbar = () => {
       setScrolled(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handeScroll);
   }, []);
+
   let x = ["navbar"];
+
   if (scrolled) {
     x.push("sticky");
   }
+
   return (
     <nav className={x.join(" ")}>
       <div className="navbar-wrapper">
