@@ -9,7 +9,7 @@ const Navbar = () => {
   const handeScroll = () => {
     const offset = window.scrollY;
 
-    if (offset > 20) {
+    if (offset > 30) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -37,16 +37,16 @@ const Navbar = () => {
         </span>
         <span className="navbar-links">
           <a href="/features" className="navbar-link">
-            Features
+            <p className="navbar-link-text">Features</p>
           </a>
           <a href="/faq" className="navbar-link">
-            FAQ
+            <p className="navbar-link-text">FAQ</p>
           </a>
           <a href="/pricing" className="navbar-link">
-            Pricing
+            <p className="navbar-link-text">Pricing</p>
           </a>
           <a href="/login" className="navbar-link">
-            Login
+            <p className="navbar-link-text">Log in</p>
           </a>
         </span>
       </div>
