@@ -1,3 +1,5 @@
+@import '_variables';
+
 .carousel {
     display: flex;
 
@@ -8,7 +10,7 @@
         border: 6px solid #64b5f6;
         border-radius: 10px;
 
-        background-color: #bbdefb;
+        background-color: $blue40;
 
         &-title {
             font-size: 25px;
