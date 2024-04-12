@@ -42,8 +42,8 @@
             &::after{
                 position: relative;
                 
-                width: 10px;
-                height: 10px;
+                width: 5px;
+                height: 5px;
                 top: 15px;
 
                 background: linear-gradient(to right, $green130, $green90);
@@ -52,9 +52,12 @@
 
                 opacity: 0;
                 transition: 0.2s;
+                
             }
             &:hover{
                 &::after {
+                    width: 13px;
+                    height: 13px;
                     top: 0px;
 
                     opacity: 1;
