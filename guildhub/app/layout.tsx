@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+
 import "@/styles/_global.scss";
-import "@/components/navbar";
+import "@/styles/_layout.scss";
+
 import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
@@ -17,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <div className="page-content">{children}</div>
       </body>
     </html>
   );
