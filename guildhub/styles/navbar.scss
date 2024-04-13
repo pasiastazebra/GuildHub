@@ -83,3 +83,36 @@
     position: fixed;
     width: 100%;
 }
+
+.active {
+    background: linear-gradient(to right, $orange130, $orange90);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    .navbar-link-text{
+        &::after {
+        position: relative;
+            
+            width: 5px;
+            height: 5px;
+            top: 15px;
+
+            background: linear-gradient(to right, $orange130, $orange90);
+            border-radius: 50%;
+            content: '';
+
+            opacity: 0;
+            transition: 0.2s;
+        }
+        &:hover{
+            &::after {
+                width: 13px;
+                height: 13px;
+                top: 0px;
+
+                opacity: 1;
+                transition: 0.2s;
+            }
+        }
+    }
+}
