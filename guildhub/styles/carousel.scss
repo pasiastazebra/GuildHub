@@ -24,3 +24,19 @@
         }
     }
 }
+
+.next-button{
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    &-image{
+        height: 20px;
+        width: 20px;
+    }
+}
