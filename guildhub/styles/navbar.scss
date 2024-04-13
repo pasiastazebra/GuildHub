@@ -71,6 +71,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .navbar-link{
+            background: linear-gradient(to right, $blue130, $blue90);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
     &-icon {
