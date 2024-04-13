@@ -10,10 +10,16 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
   const [elements, setElements] = useState([objectsArray[0], objectsArray[1]]);
 
   const handleClick = () => {
-    setElements([
-      objectsArray[elements[0].id + 1],
-      objectsArray[elements[1].id + 1],
-    ]);
+    if (elements[0].id + 1 >= objectsArray.length) {
+      setElements([objectsArray[0], objectsArray[elements[1].id + 1]]);
+    } else if (elements[1].id + 1 >= objectsArray.length) {
+      setElements([objectsArray[elements[0].id + 1], objectsArray[0]]);
+    } else {
+      setElements([
+        objectsArray[elements[0].id + 1],
+        objectsArray[elements[1].id + 1],
+      ]);
+    }
   };
 
   return (
