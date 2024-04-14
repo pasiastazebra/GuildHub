@@ -8,6 +8,7 @@
     max-width: fit-content;
     max-height: fit-content;
     }
+
     &-element {
         margin: 0px 5px;
         padding: 5px;
@@ -36,6 +37,13 @@
         &-image {
             max-width: 100px;
             max-height: 100px;
+        }
+
+        &.button {
+            background: none;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
         }
     }
 }

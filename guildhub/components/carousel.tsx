@@ -30,7 +30,6 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
 
   return (
     <div className="carousel">
-      <div className="carousel-sidepanel" />
       <div className="carousel-wrapper">
         <div
           className={`carousel-element next ${isAnimating ? "fadeOut" : ""}`}
@@ -53,19 +52,19 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
             alt=""
           />
         </div>
-      </div>
-      <div className="carousel-sidepanel">
-        <button
-          className="next-button"
-          onClick={handleClick}
-          disabled={isAnimating}
-        >
-          <img
-            src="https://www.svgrepo.com/show/521479/arrow-next-small.svg"
-            alt=""
-            className="next-button-image"
-          />
-        </button>
+        <div className="carousel-element button">
+          <button
+            className="next-button"
+            onClick={handleClick}
+            disabled={isAnimating}
+          >
+            <img
+              src="https://www.svgrepo.com/show/521479/arrow-next-small.svg"
+              alt=""
+              className="next-button-image"
+            />
+          </button>
+        </div>
       </div>
     </div>
   );
