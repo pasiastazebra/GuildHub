@@ -32,7 +32,6 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
     <div className="carousel">
       <div className={`carousel-element next ${isAnimating ? "fadeOut" : ""}`}>
         <p className="carousel-element-title">{elements[0].title}</p>
-        <p className="carousel-element-title">{elements[0].id}</p>
         <img
           className="carousel-element-image"
           src={elements[0].image}
@@ -44,7 +43,6 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
         className={`carousel-element current ${isAnimating ? "fadeOut" : ""}`}
       >
         <p className="carousel-element-title">{elements[1].title}</p>
-        <p className="carousel-element-title">{elements[1].id}</p>
         <img
           className="carousel-element-image"
           src={elements[1].image}
