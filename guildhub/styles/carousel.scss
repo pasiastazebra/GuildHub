@@ -39,7 +39,16 @@
             max-height: 100px;
         }
 
-        &.button {
+        &-extended {
+            position: absolute;
+            top: 105px;
+            width: 180px;
+            height: 280px;
+
+            background-color: $gray20;
+        }
+
+        &.invisible {
             background: none;
             box-shadow: none;
             backdrop-filter: none;
@@ -65,31 +74,27 @@
 }
 
 .carousel-element.current.fadeOut {
-    animation: fadeOutAnimation 1s ease-in-out forwards;
+    animation: fadeOutAnimation 1s ;
   }
   
   @keyframes fadeOutAnimation {
     0% {
-      opacity: 1;
       transform: translateX(0);
     }
     100% {
-      opacity: 0;
       transform: translateX(170px);
     }
   }
 
   .carousel-element.next.fadeOut {
-    animation: fadeOutAnimation 1s ease-in-out forwards;
+    animation: fadeOutAnimation 1s ;
   }
   
   @keyframes fadeOutAnimation {
     0% {
-      opacity: 0;
       transform: translateX(0);
     }
     100% {
-      opacity: 1;
       transform: translateX(170px);
     }
   }

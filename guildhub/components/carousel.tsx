@@ -52,7 +52,14 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
             alt=""
           />
         </div>
-        <div className="carousel-element button">
+        <div className="carousel-element invisible" />
+      </div>
+      <div className="carousel-wrapper">
+        <div className="carousel-element invisible">
+          <div className="carousel-element-extended" />
+        </div>
+
+        <div className="carousel-element invisible">
           <button
             className="next-button"
             onClick={handleClick}
@@ -64,6 +71,9 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
               className="next-button-image"
             />
           </button>
+        </div>
+        <div className="carousel-element invisible">
+          <div className="carousel-element-extended" />
         </div>
       </div>
     </div>
