@@ -1,16 +1,22 @@
-@import '_variables';
+@import "_variables";
 
 .carousel {
-
     &-wrapper {
-    display: flex;
+        display: flex;
 
-    max-width: fit-content;
-    max-height: fit-content;
+        max-width: fit-content;
+        max-height: fit-content;
+
+        &-button {
+            margin: 5px;
+            width: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &-window {
-
         display: flex;
         justify-content: center;
 
@@ -18,65 +24,66 @@
 
         width: 170px;
         height: 270px;
-    
-    &-wrapper{
-        display: flex;
 
-        width: fit-content;
-        height: fit-content;
+        &-wrapper {
+            display: flex;
 
-        &-element {
-        margin: 2px 5px;
-        padding: 5px;
+            width: fit-content;
+            height: fit-content;
 
-        width: 150px;
-        height: 250px;
+            &-element {
+                margin: 2px 5px;
+                padding: 5px;
 
-        border-radius: 10px;
+                width: 150px;
+                height: 250px;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+                border-radius: 10px;
 
-        background: rgba($blue40, 0.7);
-        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(7px);
-        -webkit-backdrop-filter: blur(7px);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
 
-        &-title {
-            font-size: 25px;
-            text-align: center;
-            font-weight: 600;
-        }
+                background: rgba($orange30, 0.5);
+                box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(7px);
+                -webkit-backdrop-filter: blur(7px);
 
-        &-image {
-            max-width: 100px;
-            max-height: 100px;
-        }
+                &-title {
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: 600;
+                }
 
-        &-extended {
-            position: absolute;
-            top: 105px;
-            width: 180px;
-            height: 280px;
+                &-image {
+                    max-width: 100px;
+                    max-height: 100px;
+                }
 
-            background-color: $gray20;
+                &-extended {
+                    position: absolute;
+                    top: 105px;
+                    width: 180px;
+                    height: 280px;
 
-            &.left {
-                transform: translateX(-5px);
-            }
+                    background-color: $gray20;
 
-            &.right {
-                transform: translateX(5px);
-             }
+                    &.left {
+                        transform: translateX(-5px);
+                    }
+
+                    &.right {
+                        transform: translateX(5px);
+                    }
+                }
             }
         }
     }
 }
-}
 
-.next-button{
+.next-button {
+    transition: 0.2s;
     height: 30px;
     width: 30px;
 
@@ -84,11 +91,24 @@
     justify-content: center;
     align-items: center;
 
+    border: none;
     border-radius: 50%;
 
-    &-image{
+    background-color: $blue50;
+
+    cursor: pointer;
+
+    &:hover {
+        transition: 0.2s;
+        transform: translateY(-5px);
+        background-color: $blue60;
+    }
+
+    &-image {
         height: 20px;
         width: 20px;
+
+        filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(7485%) hue-rotate(48deg) brightness(105%) contrast(97%);
     }
 }
 
@@ -100,27 +120,27 @@
 }
 
 .carousel-window-wrapper-element.current.fadeOut {
-    animation: fadeOutAnimation 1s ;
-  }
-  
-  @keyframes fadeOutAnimation {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(170px);
-    }
-  }
+    animation: fadeOutAnimation 1s;
+}
 
-  .carousel-window-wrapper-element.next.fadeOut {
-    animation: fadeOutAnimation 1s ;
-  }
-  
-  @keyframes fadeOutAnimation {
+@keyframes fadeOutAnimation {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     100% {
-      transform: translateX(170px);
+        transform: translateX(170px);
     }
-  }
+}
+
+.carousel-window-wrapper-element.next.fadeOut {
+    animation: fadeOutAnimation 1s;
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(170px);
+    }
+}

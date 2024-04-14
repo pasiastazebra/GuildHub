@@ -69,9 +69,7 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
         </div>
       </div>
       <div className="carousel-wrapper">
-        <div className="carousel invisible"></div>
-
-        <div className="carousel invisible">
+        <div className="carousel-wrapper-button">
           <button
             className="next-button"
             onClick={handleClick}
@@ -84,7 +82,6 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
             />
           </button>
         </div>
-        <div className="carousel invisible"></div>
       </div>
     </div>
   );
