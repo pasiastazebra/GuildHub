@@ -3,23 +3,18 @@ import Carousel from "@/components/carousel";
 const testArrays: { id: number; title: string; image: string }[] = [
   {
     id: 0,
-    title: "Test1",
-    image: "https://www.svgrepo.com/show/525258/box-minimalistic.svg",
+    title: "Forgot Jira",
+    image: "https://www.svgrepo.com/show/376328/jira.svg",
   },
   {
     id: 1,
-    title: "Test2",
-    image: "https://www.svgrepo.com/show/502532/box.svg",
+    title: "Forgot Excel",
+    image: "https://www.svgrepo.com/show/373589/excel.svg",
   },
   {
     id: 2,
-    title: "Test3",
-    image: "https://www.svgrepo.com/show/502532/box.svg",
-  },
-  {
-    id: 3,
-    title: "Test4",
-    image: "https://www.svgrepo.com/show/502532/box.svg",
+    title: "Forgot coding",
+    image: "https://www.svgrepo.com/show/349419/javascript.svg",
   },
 ];
 
