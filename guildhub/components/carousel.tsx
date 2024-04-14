@@ -31,10 +31,10 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
   return (
     <div className="carousel">
       <div className={`carousel-element next ${isAnimating ? "fadeOut" : ""}`}>
-        <p className="carousel-element-title">{elements[0].title}</p>
+        <p className="carousel-element-title">{elements[1].title}</p>
         <img
           className="carousel-element-image"
-          src={elements[0].image}
+          src={elements[1].image}
           alt=""
         />
       </div>
@@ -42,10 +42,10 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
       <div
         className={`carousel-element current ${isAnimating ? "fadeOut" : ""}`}
       >
-        <p className="carousel-element-title">{elements[1].title}</p>
+        <p className="carousel-element-title">{elements[0].title}</p>
         <img
           className="carousel-element-image"
-          src={elements[1].image}
+          src={elements[0].image}
           alt=""
         />
       </div>
