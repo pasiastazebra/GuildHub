@@ -46,6 +46,14 @@
             height: 280px;
 
             background-color: $gray20;
+
+            &.left {
+                transform: translateX(-5px);
+            }
+
+            &.right {
+                transform: translateX(5px);
+            }
         }
 
         &.invisible {

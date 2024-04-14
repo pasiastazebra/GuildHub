@@ -25,7 +25,7 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
         ]);
       }
       setIsAnimating(false);
-    }, 1000);
+    }, 900);
   };
 
   return (
@@ -56,7 +56,7 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
       </div>
       <div className="carousel-wrapper">
         <div className="carousel-element invisible">
-          <div className="carousel-element-extended" />
+          <div className="carousel-element-extended left" />
         </div>
 
         <div className="carousel-element invisible">
@@ -73,7 +73,7 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
           </button>
         </div>
         <div className="carousel-element invisible">
-          <div className="carousel-element-extended" />
+          <div className="carousel-element-extended right" />
         </div>
       </div>
     </div>
