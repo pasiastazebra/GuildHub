@@ -8,23 +8,29 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
   const [elements, setElements] = useState([objectsArray[0], objectsArray[1]]);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleClick = () => {
-    if (elements[0].id + 1 >= objectsArray.length) {
-      setElements([objectsArray[0], objectsArray[elements[1].id + 1]]);
-    } else if (elements[1].id + 1 >= objectsArray.length) {
-      setElements([objectsArray[elements[0].id + 1], objectsArray[0]]);
-    } else {
-      setElements([
-        objectsArray[elements[0].id + 1],
-        objectsArray[elements[1].id + 1],
-      ]);
-    }
+    setIsAnimating(true);
+
+    setTimeout(() => {
+      if (elements[0].id + 1 >= objectsArray.length) {
+        setElements([objectsArray[0], objectsArray[elements[1].id + 1]]);
+      } else if (elements[1].id + 1 >= objectsArray.length) {
+        setElements([objectsArray[elements[0].id + 1], objectsArray[0]]);
+      } else {
+        setElements([
+          objectsArray[elements[0].id + 1],
+          objectsArray[elements[1].id + 1],
+        ]);
+      }
+      setIsAnimating(false);
+    }, 1000);
   };
 
   return (
     <div className="carousel">
-      <div className="carousel-element next">
+      <div className={`carousel-element next ${isAnimating ? "fadeOut" : ""}`}>
         <p className="carousel-element-title">{elements[0].title}</p>
         <p className="carousel-element-title">{elements[0].id}</p>
         <img
@@ -34,7 +40,9 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
         />
       </div>
 
-      <div className="carousel-element current">
+      <div
+        className={`carousel-element current ${isAnimating ? "fadeOut" : ""}`}
+      >
         <p className="carousel-element-title">{elements[1].title}</p>
         <p className="carousel-element-title">{elements[1].id}</p>
         <img
@@ -43,7 +51,11 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
           alt=""
         />
       </div>
-      <button className="next-button" onClick={handleClick}>
+      <button
+        className="next-button"
+        onClick={handleClick}
+        disabled={isAnimating}
+      >
         <img
           src="https://www.svgrepo.com/show/521479/arrow-next-small.svg"
           alt=""

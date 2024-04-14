@@ -40,3 +40,18 @@
         width: 20px;
     }
 }
+
+.carousel-element.fadeOut {
+    animation: fadeOutAnimation 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOutAnimation {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
