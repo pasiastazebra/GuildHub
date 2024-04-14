@@ -9,8 +9,24 @@
     max-height: fit-content;
     }
 
-    &-element {
-        margin: 0px 5px;
+    &-window {
+
+        display: flex;
+        justify-content: center;
+
+        overflow: hidden;
+
+        width: 170px;
+        height: 270px;
+    
+    &-wrapper{
+        display: flex;
+
+        width: fit-content;
+        height: fit-content;
+
+        &-element {
+        margin: 2px 5px;
         padding: 5px;
 
         width: 150px;
@@ -24,7 +40,7 @@
         align-items: center;
 
         background: rgba($blue40, 0.7);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(7px);
         -webkit-backdrop-filter: blur(7px);
 
@@ -53,16 +69,11 @@
 
             &.right {
                 transform: translateX(5px);
+             }
             }
         }
-
-        &.invisible {
-            background: none;
-            box-shadow: none;
-            backdrop-filter: none;
-            -webkit-backdrop-filter: none;
-        }
     }
+}
 }
 
 .next-button{
@@ -81,7 +92,14 @@
     }
 }
 
-.carousel-element.current.fadeOut {
+.invisible {
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.carousel-window-wrapper-element.current.fadeOut {
     animation: fadeOutAnimation 1s ;
   }
   
@@ -94,7 +112,7 @@
     }
   }
 
-  .carousel-element.next.fadeOut {
+  .carousel-window-wrapper-element.next.fadeOut {
     animation: fadeOutAnimation 1s ;
   }
   

@@ -31,35 +31,47 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
   return (
     <div className="carousel">
       <div className="carousel-wrapper">
-        <div
-          className={`carousel-element next ${isAnimating ? "fadeOut" : ""}`}
-        >
-          <p className="carousel-element-title">{elements[1].title}</p>
-          <img
-            className="carousel-element-image"
-            src={elements[1].image}
-            alt=""
-          />
-        </div>
+        <div className="carousel invisible" />
+        <div className="carousel-window">
+          <div className="carousel-window-wrapper">
+            <div
+              className={`carousel-window-wrapper-element next ${
+                isAnimating ? "fadeOut" : ""
+              }`}
+            >
+              <p className="carousel-window-wrapper-element-title">
+                {elements[1].title}
+              </p>
+              <img
+                className="carousel-window-wrapper-element-image"
+                src={elements[1].image}
+                alt=""
+              />
+            </div>
 
-        <div
-          className={`carousel-element current ${isAnimating ? "fadeOut" : ""}`}
-        >
-          <p className="carousel-element-title">{elements[0].title}</p>
-          <img
-            className="carousel-element-image"
-            src={elements[0].image}
-            alt=""
-          />
+            <div
+              className={`carousel-window-wrapper-element current ${
+                isAnimating ? "fadeOut" : ""
+              }`}
+            >
+              <p className="carousel-window-wrapper-element-title">
+                {elements[0].title}
+              </p>
+              <img
+                className="carousel-window-wrapper-element-image"
+                src={elements[0].image}
+                alt=""
+              />
+            </div>
+            <div className="carousel-window-wrapper-element invisible" />
+          </div>
+          <div className="carousel invisible" />
         </div>
-        <div className="carousel-element invisible" />
       </div>
       <div className="carousel-wrapper">
-        <div className="carousel-element invisible">
-          <div className="carousel-element-extended left" />
-        </div>
+        <div className="carousel invisible"></div>
 
-        <div className="carousel-element invisible">
+        <div className="carousel invisible">
           <button
             className="next-button"
             onClick={handleClick}
@@ -72,9 +84,7 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
             />
           </button>
         </div>
-        <div className="carousel-element invisible">
-          <div className="carousel-element-extended right" />
-        </div>
+        <div className="carousel invisible"></div>
       </div>
     </div>
   );
