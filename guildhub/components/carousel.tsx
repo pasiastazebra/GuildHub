@@ -30,24 +30,28 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
 
   return (
     <div className="carousel">
-      <div className={`carousel-element next ${isAnimating ? "fadeOut" : ""}`}>
-        <p className="carousel-element-title">{elements[1].title}</p>
-        <img
-          className="carousel-element-image"
-          src={elements[1].image}
-          alt=""
-        />
-      </div>
+      <div className="carousel-wrapper">
+        <div
+          className={`carousel-element next ${isAnimating ? "fadeOut" : ""}`}
+        >
+          <p className="carousel-element-title">{elements[1].title}</p>
+          <img
+            className="carousel-element-image"
+            src={elements[1].image}
+            alt=""
+          />
+        </div>
 
-      <div
-        className={`carousel-element current ${isAnimating ? "fadeOut" : ""}`}
-      >
-        <p className="carousel-element-title">{elements[0].title}</p>
-        <img
-          className="carousel-element-image"
-          src={elements[0].image}
-          alt=""
-        />
+        <div
+          className={`carousel-element current ${isAnimating ? "fadeOut" : ""}`}
+        >
+          <p className="carousel-element-title">{elements[0].title}</p>
+          <img
+            className="carousel-element-image"
+            src={elements[0].image}
+            alt=""
+          />
+        </div>
       </div>
       <button
         className="next-button"
