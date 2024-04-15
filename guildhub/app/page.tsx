@@ -17,7 +17,7 @@ const testArrays: { id: number; title: string; image: string }[] = [
     image: "https://www.svgrepo.com/show/349419/javascript.svg",
   },
 ];
-//xd
+
 const mainPage = () => {
   return (
     <>
