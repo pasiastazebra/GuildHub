@@ -22,8 +22,8 @@ const mainPage = () => {
   return (
     <>
       <h1>Are you tired of managing your Albion guild?</h1>
-      <h2>We developed a tool from your dreams, so you don't have to.</h2>
       <Carousel objectsArray={testArrays}></Carousel>
+      <h2>We developed a tool from your dreams, so you don't have to.</h2>
       <div className="details">
         <h2 className="details-title">Intrested? Check details!</h2>
         <a href="/features" className="details-arrow">
