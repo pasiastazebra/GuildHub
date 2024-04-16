@@ -1,15 +1,12 @@
 @import "_variables";
 
 .question {
-    border: 1px black solid;
     &-top {
         display: flex;
-        border: 1px black solid;
 
         width: 50vw;
         height: 5vh;
         &-wrapper {
-            border: 1px black solid;
             height: 100%;
             &-image {
                 height: 100%;
@@ -18,7 +15,6 @@
         }
         &-text {
             font-size: 20px;
-            border: 1px black solid;
         }
     }
     &-bot {
