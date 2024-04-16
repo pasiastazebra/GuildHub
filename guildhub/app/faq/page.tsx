@@ -6,11 +6,11 @@ const faq = () => {
       <p>faq.tsx</p>
       <Question
         question="What is GuildHub?"
-        respond="GuildHub is Albion Online's guild manager. A set of tools designed to support the management of a guild, its members, officers, blacklist, treasury, and a mass of other things."
+        respond="GuildHub is Albion Online's guild manager. A set of tools designed to help you manage your guild, its members, officers, blacklist, treasury, armory and a ton of other stuff."
       />
       <Question
         question="Can I use GuildHub for another game?"
-        respond="All of the tools available in the app are designed specifically for Albion Online, but if you find them useful, feel free to use them!"
+        respond="All of the tools available in the app are designed specifically for Albion Online, but if you find them useful, feel free to use them, but I can't guarantee a perfect experience."
       />
       <Question
         question="Is there support planned for other games?"
@@ -18,7 +18,7 @@ const faq = () => {
       />
       <Question
         question="Is the platform free of charge?"
-        respond="At this moment, yes, the platform is free of charge. However, there are plans to move to a subscription model with a free plan in the future."
+        respond="At this moment yes, but in the future there are plans to move to a subscription model (the price will not be too high 😄) with a free plan. Any changes to this will be announced accordingly in the user panel."
       />
     </div>
   );
