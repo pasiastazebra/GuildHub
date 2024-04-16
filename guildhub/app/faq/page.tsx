@@ -5,7 +5,7 @@ import Question from "@/components/Question";
 
 const faq = () => {
   return (
-    <div>
+    <>
       <p>faq.tsx</p>
       <Question
         question="What is GuildHub?"
@@ -23,7 +23,7 @@ const faq = () => {
         question="Is the platform free of charge?"
         respond="At this moment yes, but in the future there are plans to move to a subscription model (the price will not be too high 😄) with a free plan. Any changes to this will be announced accordingly in the user panel."
       />
-    </div>
+    </>
   );
 };
 
