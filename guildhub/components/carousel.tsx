@@ -77,7 +77,7 @@ const Carousel: React.FC<CarouselProps> = ({ objectsArray }) => {
           >
             <img
               src="https://www.svgrepo.com/show/521479/arrow-next-small.svg"
-              alt=""
+              alt="Next slide arrow"
               className="next-button-image"
             />
           </button>
