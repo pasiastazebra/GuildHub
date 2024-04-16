@@ -6,7 +6,7 @@ import Question from "@/components/Question";
 const faq = () => {
   return (
     <>
-      <h1>FAQ</h1>
+      <h1>Frequently Asked Questions</h1>
       <Question
         question="What is GuildHub?"
         respond="GuildHub is Albion Online's guild manager. A set of tools designed to help you manage your guild, its members, officers, blacklist, treasury, armory and a ton of other stuff."
