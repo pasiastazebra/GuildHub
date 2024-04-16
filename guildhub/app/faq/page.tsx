@@ -4,7 +4,10 @@ const faq = () => {
   return (
     <div>
       <p>faq.tsx</p>
-      <Question question="Question" respond="respond"></Question>
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      ></Question>
     </div>
   );
 };

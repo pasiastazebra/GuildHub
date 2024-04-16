@@ -1,10 +1,28 @@
 @import "_variables";
 
 .question {
+    width: 50vw;
+    background: rgba($orange30, 0.5);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+
+    overflow: hidden;
+
+    border-radius: 10px;
     &-top {
+        background: rgba($orange40, 0.5);
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+
+        border-radius: 10px;
+
         display: flex;
 
-        width: 50vw;
+        padding: 5px;
+
+        
         height: 5vh;
         &-wrapper {
             height: 100%;
@@ -18,10 +36,21 @@
         }
     }
     &-bot {
-        &-text {
+        
+        &.rollout{
+            max-height: 200px;
+            transition: max-height 1s linear;
+        }
+        &.rollin{
+            max-height: 0px;
+            transition: max-height 1s linear;
+        }
+        &-wrapper-text {
             margin: 10px;
 
             font-size: 17px;
+            word-wrap: break-word;
         }
     }
 }
+
