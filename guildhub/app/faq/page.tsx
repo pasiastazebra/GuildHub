@@ -7,7 +7,47 @@ const faq = () => {
       <Question
         question="Question"
         respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
-      ></Question>
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
+      <Question
+        question="Question"
+        respond="respondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrespondrendrespondrespondrespondrespondrespondrespondrespondrespondrespond end"
+      />
     </div>
   );
 };

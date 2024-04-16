@@ -9,7 +9,7 @@ interface questionProps {
 }
 
 const Question: React.FC<questionProps> = ({ question, respond }) => {
-  const [isRolled, setRolled] = useState(false);
+  const [isRolled, setRolled] = useState(true);
 
   const handleClick = () => {
     isRolled ? setRolled(false) : setRolled(true);
@@ -22,7 +22,9 @@ const Question: React.FC<questionProps> = ({ question, respond }) => {
           <img
             src="https://www.svgrepo.com/show/521479/arrow-next-small.svg"
             alt="Expand arrow"
-            className="question-top-wrapper-image"
+            className={`question-top-wrapper-image ${
+              isRolled ? "rollin" : "rollout"
+            }`}
           />
         </div>
         <h1 className="question-top-text">{question}</h1>

@@ -1,7 +1,10 @@
 @import "_variables";
 
 .question {
+    margin: 10px;
+
     width: 50vw;
+    
     background: rgba($orange30, 0.5);
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(7px);
@@ -29,6 +32,20 @@
             &-image {
                 height: 100%;
                 width: 100%;
+
+                cursor: pointer;
+
+                &.rollout {
+                    transition: 0.3s;
+
+                    transform: rotate(90deg);
+                }
+
+                &.rollin {
+                    transition: 0.3s;
+
+                    transform: rotate(0deg);
+                }
             }
         }
         &-text {
@@ -39,11 +56,11 @@
         
         &.rollout{
             max-height: 200px;
-            transition: max-height 1s linear;
+            transition: max-height 0.5s linear;
         }
         &.rollin{
             max-height: 0px;
-            transition: max-height 1s linear;
+            transition: max-height 0.5s linear;
         }
         &-wrapper-text {
             margin: 10px;
