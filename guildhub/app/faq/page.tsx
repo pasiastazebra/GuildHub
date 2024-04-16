@@ -1,7 +1,10 @@
+import Question from "@/components/question";
+
 const faq = () => {
   return (
     <div>
       <p>faq.tsx</p>
+      <Question question="Question" respond="respond"></Question>
     </div>
   );
 };
