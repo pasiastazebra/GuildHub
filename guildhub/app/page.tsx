@@ -1,4 +1,4 @@
-import Carousel from "@/components/carousel";
+import Carousel from "@/components/Carousel";
 
 const testArrays: { id: number; title: string; image: string }[] = [
   {
