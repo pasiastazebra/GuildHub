@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import "@/styles/navbar.scss";
 
 const Navbar = () => {
+  //![BUG] this scrolling is so awful, need to fix it
   const [scrolled, setScrolled] = useState(false);
   const pathname: string = usePathname();
 
