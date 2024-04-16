@@ -1,5 +1,8 @@
 import Question from "@/components/Question";
 
+//! Please keep in mind that due to stupid Question component animation
+//! respond text should be that long
+
 const faq = () => {
   return (
     <div>
