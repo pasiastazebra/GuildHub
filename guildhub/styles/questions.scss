@@ -20,11 +20,12 @@
         border-radius: 10px;
 
         display: flex;
+        align-items: center;
 
         padding: 5px;
 
         
-        height: 5vh;
+        height: 30px;
         &-wrapper {
             height: 100%;
             &-image {
