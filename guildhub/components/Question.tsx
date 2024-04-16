@@ -27,7 +27,7 @@ const Question: React.FC<questionProps> = ({ question, respond }) => {
             }`}
           />
         </div>
-        <h1 className="question-top-text">{question}</h1>
+        <h2 className="question-top-text">{question}</h2>
       </div>
       <div className={`question-bot ${isRolled ? "rollin" : "rollout"}`}>
         <div className="question-bot-wrapper">
