@@ -2,7 +2,8 @@
 
 import { signIn } from "next-auth/react";
 import "@/styles/loginForm.scss";
-//import "@/styles/_ui.scss";
+
+//! For sure needs to be redesigned, my eyes hurts
 
 const LoginForm: React.FC = () => {
   return (
