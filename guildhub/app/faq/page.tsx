@@ -3,6 +3,11 @@ import Question from "@/components/Question";
 //! Please keep in mind that due to stupid Question component animation
 //! respond text should be that long
 
+//? Question ideas:
+//?
+//? -Mobile version
+//? -Data information/why need to use google account
+
 const faq = () => {
   return (
     <>

@@ -1,6 +1,10 @@
 @import '_variables';
 
 .app {
+    background: rgba($gray30, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 }
 
 .btn {
@@ -17,18 +21,11 @@
 }
 
 .txt {
-    &-100 {
+    &-title{
+        font-weight: 600;
     }
-    &-200 {
-    }
-    &-300 {
-    }
-    &-400 {
-    }
-    &-500 {
-    }
-    &-600 {
-    }
-    &-700 {
+    &-desc{
+        font-weight: 400;
+
     }
 }
