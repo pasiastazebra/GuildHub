@@ -2,12 +2,12 @@
 
 import { signIn } from "next-auth/react";
 import "@/styles/loginForm.scss";
-import "@/styles/_ui.scss";
+//import "@/styles/_ui.scss";
 
 const LoginForm: React.FC = () => {
   return (
     <div className="app">
-      <div className="top-wrapper">
+      <div className="wrapper top">
         <h1 className="txt-title">
           Please use any of the options below to continue.
         </h1>
@@ -48,8 +48,10 @@ const LoginForm: React.FC = () => {
           <span style={{ display: "none" }}>Continue with Google</span>
         </div>
       </button>
-      <div className="bot-wrapper">
-        <a href="/faq">Worried about privacy?</a>
+      <div className="wrapper bot">
+        <a className="wrapper-bot-link" href="/faq">
+          Worried about privacy?
+        </a>
       </div>
     </div>
   );
