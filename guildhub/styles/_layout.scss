@@ -15,3 +15,33 @@
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
 }
+
+.background-img {
+    position: absolute;
+
+    &.first {
+        max-width: 300px;
+
+        top: 2vh;
+        left: 0vw;
+    }
+
+    &.second {
+        max-width: 150px;
+
+        top: 20vh;
+        left: 60vw;
+    }
+    &.third {
+        max-width: 300px;
+
+        top: 40vh;
+        left:75vw;
+    }
+    &.fourth {
+        max-width: 150px;
+
+        top: 75vh;
+        left: 20vw;
+    }
+}
