@@ -7,6 +7,8 @@ import Question from "@/components/Question";
 //?
 //? -Mobile version
 //? -Data information/why need to use google account
+//? -How can I register
+//? -Login using Google
 
 const faq = () => {
   return (
