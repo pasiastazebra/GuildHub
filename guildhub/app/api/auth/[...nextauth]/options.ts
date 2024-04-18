@@ -23,6 +23,7 @@ export const options: NextAuthOptions = {
         const user = { id: '1', accessTag: 'KazimierzTestowy#2137', accessToken: '@2137' }
 
         if (credentials.accessTag === user.accessTag && credentials.accessToken === user.accessToken) {
+          console.log(user);
           return user;
         } else {
           return null;
