@@ -30,44 +30,6 @@ const mainPage = () => {
           {"->"}
         </a>
       </div>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
-      <p>pyr</p>
     </>
   );
 };
