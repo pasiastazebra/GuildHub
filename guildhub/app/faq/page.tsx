@@ -5,7 +5,6 @@ import Question from "@/components/Question";
 
 //? Question ideas:
 //?
-//? -Mobile version
 //? -Data information/why need to use google account
 //? -How can I register
 //? -Login using Google
@@ -29,6 +28,10 @@ const faq = () => {
       <Question
         question="Is the platform free of charge?"
         respond="At this moment yes, but in the future there are plans to move to a subscription model (the price will not be too high 😄) with a free plan. Any changes to this will be announced accordingly in the user panel."
+      />
+      <Question
+        question="Is a mobile version planned?"
+        respond="It's hard to say. Landing page for sure, but as for the port of the app itself, it all depends on the final complexity. At the moment, rather not, but everything can change."
       />
     </>
   );
