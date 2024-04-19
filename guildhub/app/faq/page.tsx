@@ -5,8 +5,6 @@ import Question from "@/components/Question";
 
 //? Question ideas:
 //?
-//? -Data information/why need to use google account
-//? -How can I register
 //? -Login using Google
 
 const faq = () => {
@@ -32,6 +30,10 @@ const faq = () => {
       <Question
         question="Is a mobile version planned?"
         respond="It's hard to say. Landing page for sure, but as for the port of the app itself, it all depends on the final complexity. At the moment, rather not, but everything can change."
+      />
+      <Question
+        question="How do I access the app?"
+        respond="During the closed beta, you need an access token and an access tag. If you are a guild master, hit me up on Discord, while if you are an officer from a guild using GuildHub, hit up your guild master."
       />
     </>
   );
