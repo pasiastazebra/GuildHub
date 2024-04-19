@@ -35,6 +35,10 @@ const faq = () => {
         question="How do I access the app?"
         respond="During the closed beta, you need an access token and an access tag. If you are a guild master, hit me up on Discord, while if you are an officer from a guild using GuildHub, hit up your guild master."
       />
+      <Question
+        question="Will it be possible to log in with Discord?"
+        respond="Login with third-party applications is planned and will be implemented in time for the transition to an open access policy. This does not apply only to Discord, but also to Google, Microsoft, Github and perhaps others."
+      />
     </>
   );
 };
