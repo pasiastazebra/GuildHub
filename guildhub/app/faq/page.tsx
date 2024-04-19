@@ -5,7 +5,6 @@ import Question from "@/components/Question";
 
 //? Question ideas:
 //?
-//? -Login using Google
 
 const faq = () => {
   return (
