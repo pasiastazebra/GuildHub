@@ -55,14 +55,14 @@ const Navbar = () => {
           >
             <p className="navbar-link-text">FAQ</p>
           </a>
-          <a
+          {/* <a
             href="/pricing"
             className={
               pathname === "/pricing" ? "navbar-link active" : "navbar-link"
             }
           >
             <p className="navbar-link-text">Pricing</p>
-          </a>
+          </a> */}
           <a
             href="/login"
             className={
