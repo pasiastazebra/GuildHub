@@ -10,7 +10,7 @@ const LoginForm: React.FC = () => {
     <div className="app">
       <div className="wrapper top">
         <h1 className="txt-title">Welcome back</h1>
-        <p className="txt-desc">Tell us about you</p>
+        <p className="txt-desc">Tell us more about you</p>
       </div>
       <div className="wrapper mid">
         <form action="" className="login-form"></form>
