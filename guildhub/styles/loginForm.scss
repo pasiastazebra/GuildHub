@@ -62,12 +62,28 @@
   display: flex;
   flex-direction: column;
   &-label {
+    font-weight: 400;
+    color: $gray140;
   }
   &-input {
+    transition: 0.2s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    border: 0;
+    border-radius: 25px;
+
+    padding: 5px;
+    font-style: italic;
+    &:focus {
+      transition: 0.2s;
+      outline: 1px solid $blue100;
+    }
   }
   &-button {
     cursor: pointer;
-    
+
     transition: 0.2s;
 
     margin: 10px 0px;
@@ -79,7 +95,7 @@
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 
-    border: 0px solid $gray110;
+    border: 0;
     border-radius: 25px;
 
     color: $gray150;
@@ -89,6 +105,16 @@
     &:hover {
       transition: 0.2s;
 
+      transform: translateX(2px) translateY(2px);
+      box-shadow: none;
+
+      color: $gray120;
+    }
+    &:focus {
+      transition: 0.2s;
+
+      outline: none;
+      
       transform: translateX(2px) translateY(2px);
       box-shadow: none;
 
