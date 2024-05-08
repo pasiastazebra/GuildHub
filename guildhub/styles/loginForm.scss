@@ -69,5 +69,14 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  //text-align: center;
+  &-label {
+
+  }
+  &-input {
+
+  }
+  &-button{
+    
+  }
 }

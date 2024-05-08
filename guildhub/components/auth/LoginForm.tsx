@@ -33,6 +33,7 @@ const LoginForm: React.FC = () => {
               type="text"
               className="login-form-input"
             ></input>
+            <button className="login-form-button">Log in</button>
           </form>
         </div>
       </div>
