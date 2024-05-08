@@ -16,14 +16,20 @@ const LoginForm: React.FC = () => {
         <div className="wrapper mid">
           <form action="" className="login-form">
             <label htmlFor="tag" className="login-form-label">
-              Acess tag
+              Access tag
             </label>
-            <input name="tag" type="text" className="login-form-input"></input>
+            <input
+              name="tag"
+              placeholder="access tag"
+              type="text"
+              className="login-form-input"
+            ></input>
             <label htmlFor="token" className="login-form-label">
-              Acess token
+              Access token
             </label>
             <input
               name="token"
+              placeholder="access token"
               type="text"
               className="login-form-input"
             ></input>
