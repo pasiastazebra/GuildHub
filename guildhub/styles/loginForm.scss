@@ -36,11 +36,11 @@
 
   &.bot {
     a {
-      color: $blue140;
+      color: $blue120;
       text-decoration: none;
 
       &:hover {
-        color: $blue160;
+        color: $blue140;
         text-decoration: underline;
       }
     }
@@ -67,6 +67,7 @@
   }
   &-input {
     transition: 0.2s;
+
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
@@ -78,7 +79,11 @@
     font-style: italic;
     &:focus {
       transition: 0.2s;
+
       outline: 1px solid $blue100;
+
+      transform: translateX(2px) translateY(2px);
+      box-shadow: none;
     }
   }
   &-button {

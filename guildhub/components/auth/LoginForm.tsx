@@ -39,7 +39,7 @@ const LoginForm: React.FC = () => {
       </div>
       <div className="wrapper bot">
         <a className="wrapper-bot-link" href="/faq">
-          Worried about privacy?
+          Need help?
         </a>
       </div>
     </div>
