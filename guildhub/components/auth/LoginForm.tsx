@@ -9,11 +9,12 @@ const LoginForm: React.FC = () => {
   return (
     <div className="app">
       <div className="wrapper top">
-        <h1 className="txt-title">
-          Please use any of the options below to continue.
-        </h1>
+        <h1 className="txt-title">Welcome back</h1>
+        <p className="txt-desc">Tell us about you</p>
       </div>
-
+      <div className="wrapper mid">
+        <form action="" className="login-form"></form>
+      </div>
       <div className="wrapper bot">
         <a className="wrapper-bot-link" href="/faq">
           Worried about privacy?

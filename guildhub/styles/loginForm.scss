@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   &.top {
     text-align: center;
   }
@@ -42,9 +43,14 @@
   }
 }
 
-.txt-title {
-  background: linear-gradient(to right, $green130, $green90);
+.txt {
+  &-title {
+    background: linear-gradient(to right, $green130, $green90);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  }
+  &-desc {
+    
 
+  }
 }
