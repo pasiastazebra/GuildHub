@@ -11,7 +11,7 @@ const LoginForm: React.FC = () => {
       <div className="uperwrapper">
         <div className="wrapper top">
           <h1 className="txt-title">Welcome back</h1>
-          <p className="txt-desc">Tell us more about you</p>
+          <p className="txt-desc">Tell us more about yourself</p>
         </div>
         <div className="wrapper mid">
           <form action="" className="login-form">
@@ -20,7 +20,7 @@ const LoginForm: React.FC = () => {
             </label>
             <input
               name="tag"
-              placeholder="access tag"
+              placeholder="Johndoe333"
               type="text"
               className="login-form-input"
             ></input>
@@ -29,7 +29,7 @@ const LoginForm: React.FC = () => {
             </label>
             <input
               name="token"
-              placeholder="access token"
+              placeholder="@1234"
               type="text"
               className="login-form-input"
             ></input>
